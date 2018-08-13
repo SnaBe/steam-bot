@@ -1,9 +1,9 @@
 {
   "account": {
-    "username": "",
-    "password": "",
-    "sharedSecret": "",
-    "identitySecret" : ""
+    "username": "bot_accounts_steam_username",
+    "password": "bot_accounts-steam_password",
+    "sharedSecret": "bot_sda_sharedSecret",
+    "identitySecret" : "bot_sda_identitySecret"
   },
   "bot": {
     "displayName": "Bot #1",
