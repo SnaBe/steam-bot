@@ -1,7 +1,7 @@
 //-Modules & instances- (All modules/packages hould be installed with: npm install package-name)
 //We require a file named config to retrive our account data from a file, instead of hardcoding it. (This file should be located in the samle folder as the bot.js)
 const config = require('./config.json');
-//Below is the required module steam-user, necessary to login onto Steam and simulate the Stean client. 
+//Below is the required module steam-user, necessary to login onto Steam and simulate the Steam client. 
 const SteamUser = require('steam-user');
 //We require the steamcommunity module to access the Steam Community.
 const SteamCommunity = require('steamcommunity');
@@ -30,7 +30,7 @@ client.on('loggedOn', function(details) {
   client.setPersona(SteamUser.Steam.EPersonaState.LookingToTrade, config.bot.displayName); //The setPersona method takes two arguments, a EPersonaState (fx. LookingToTrade ), and a persona name (fx. Hoovy).
   client.gamesPlayed(config.bot.gamesPlayed); //The gamesPlayed method takes one argument, a Steam game appid or string. 
 });
-//When client emits a error event, we'll log that error to the console.
+//When the client emits an error event, we'll log that error to the console.
 client.on('error', function(err) {
   //An error occurred during logon.
   console.log('Error: ' + err);
