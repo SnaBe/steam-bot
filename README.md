@@ -21,12 +21,12 @@ Disable encryption, locate the maFile folder and find the steamid for you bot ac
 
 3. Open a command prompt & type the follwing command.
 ```
-cd C:\Users\WINDOWS_USER\YOUR_FOLDER_LOCATION
+$ cd C:\Users\WINDOWS_USER\YOUR_FOLDER_LOCATION
 ```
 
 4. Install the required packages with npm
 ```
-npm i
+$ npm i
 ```
 
 5. Run the bot
@@ -34,7 +34,7 @@ npm i
 You must have Node.js installed before you can run anything with the node command. You can download Node.js [here.](https://nodejs.org/en/download/ "NodeJS download page")
 
 ```
-node bot.js
+$ node bot.js
 ```
 6. That's it, enjoy!
 
