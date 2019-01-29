@@ -1,4 +1,4 @@
-//-Modules & instances- (All modules/packages hould be installed with: npm install package-name)
+//-Modules & instances- (All modules/packages should be installed with: npm install package-name)
 //We require a file named config to retrive our account data from a file, instead of hardcoding it. (This file should be located in the samle folder as the bot.js)
 const config = require('./config.json');
 //Below is the required module steam-user, necessary to login onto Steam and simulate the Steam client. 
@@ -33,5 +33,5 @@ client.on('loggedOn', function(details) {
 //When the client emits an error event, we'll log that error to the console.
 client.on('error', function(err) {
   //An error occurred during logon.
-  console.log('Error: ' + err);
+  console.log('Error: ' + err.message);
 });
